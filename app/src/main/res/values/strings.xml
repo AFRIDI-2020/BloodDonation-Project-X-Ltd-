@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Blood Donation</string>
+
+    <!-- welcome screen -->
+    <string name="start_journey">Start Journey</string>
+    <string name="blood">Blood</string>
+    <string name="donation">Donation</string>
+</resources>
