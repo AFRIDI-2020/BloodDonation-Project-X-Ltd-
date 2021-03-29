@@ -5,4 +5,12 @@
     <string name="start_journey">Start Journey</string>
     <string name="blood">Blood</string>
     <string name="donation">Donation</string>
+
+    <!--splash screen-->
+    <string name="donate_blood">Donate Blood</string>
+    <string name="donate_blood_des">You do not need to be a doctor to save lives. Just donate blood. Its safe, its simple and every blood donor is a life saver.</string>
+    <string name="next">Next</string>
+    <string name="save_life">Save Life</string>
+    <string name="save_life_des">Excuses never save a life, blood donation does. Get connected with blood donors and be a donor. "Donate Blood" app will help you to have that opportunity and save a life.</string>
+
 </resources>

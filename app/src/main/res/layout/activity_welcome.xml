@@ -4,97 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".WelcomeActivity">
 
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_92"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".92"
-        android:id="@+id/gl_hor_92"/>
+        app:layout_constraintGuide_percent=".92" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_30"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent=".30"
-        android:id="@+id/gl_hor_30"/>
+        app:layout_constraintGuide_percent=".30" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_ver_80"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent=".80"
-        android:id="@+id/gl_ver_80"/>
+        app:layout_constraintGuide_percent=".80" />
 
     <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_ver_20"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent=".20"
-        android:id="@+id/gl_ver_20"/>
-
+        app:layout_constraintGuide_percent=".20" />
 
 
     <Button
+        android:id="@+id/btn_start_journey"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rec_round_button_on_pressed"
+        android:clickable="true"
+        android:elevation="@dimen/_30sdp"
+        android:focusable="true"
+        android:padding="@dimen/_12sdp"
         android:text="@string/start_journey"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/_13sdp"
-        android:padding="@dimen/_12sdp"
+        android:onClick="gotoSplashScreen"
         android:textStyle="bold"
-        android:clickable="true"
-        android:elevation="@dimen/_30sdp"
-        android:focusable="true"
         app:layout_constraintBottom_toTopOf="@id/gl_hor_92"
-        app:layout_constraintStart_toEndOf="@id/gl_ver_20"
         app:layout_constraintEnd_toStartOf="@id/gl_ver_80"
-        android:id="@+id/btn_start_journey"/>
-
+        app:layout_constraintStart_toEndOf="@id/gl_ver_20" />
 
 
     <ImageView
+        android:id="@+id/icon"
         android:layout_width="@dimen/_60sdp"
         android:layout_height="@dimen/_60sdp"
         android:src="@drawable/blood_drop_icon"
-        app:layout_constraintTop_toBottomOf="@id/gl_hor_30"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/icon"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl_hor_30" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/icon"
-        app:layout_constraintStart_toStartOf="@id/icon"
+        android:layout_marginTop="@dimen/_3sdp"
         app:layout_constraintEnd_toEndOf="@id/icon"
-        android:layout_marginTop="@dimen/_3sdp">
+        app:layout_constraintStart_toStartOf="@id/icon"
+        app:layout_constraintTop_toBottomOf="@id/icon">
 
         <TextView
             android:id="@+id/blood"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/blood"
-            android:textSize="@dimen/_18sdp"
             android:textColor="@color/red"
-            android:textStyle="bold"/>
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/donation"
-            android:textSize="@dimen/_18sdp"
-            android:textColor="@color/black"
-            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_3sdp"
             android:layout_toRightOf="@id/blood"
-            android:layout_marginStart="@dimen/_3sdp"/>
+            android:text="@string/donation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
