@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="transparentWhite">#80FFFFFF</color>
     <color name="red">#EF1A1A</color>
+    <color name="ash">#465349</color>
+    <color name="ash2">#e7e2e8</color>
+    <color name="TextInputLayoutErrrorMessageColor">#FC0404</color>
 </resources>

@@ -13,4 +13,12 @@
     <string name="save_life">Save Life</string>
     <string name="save_life_des">Excuses never save a life, blood donation does. Get connected with blood donors and be a donor. "Donate Blood" app will help you to have that opportunity and save a life.</string>
 
+
+    <!--login activity -->
+    <string name="email_username">Email or Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgetPassword">Forget Password?</string>
+    <string name="dontHaveAcc">Don\'t have an account? </string>
+    <string name="signUp">Sign Up</string>
 </resources>

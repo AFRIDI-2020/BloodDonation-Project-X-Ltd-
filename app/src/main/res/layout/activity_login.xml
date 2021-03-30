@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_40sdp"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".10"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:src="@drawable/blood_drop_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gl_hor_10" />
+
+    <RelativeLayout
+        android:id="@+id/app_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintEnd_toEndOf="@id/icon"
+        app:layout_constraintStart_toStartOf="@id/icon"
+        app:layout_constraintTop_toBottomOf="@id/icon">
+
+        <TextView
+            android:id="@+id/blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toRightOf="@id/blood"
+            android:text="@string/donation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/label_email_or_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:text="@string/email_username"
+        android:textColor="@color/ash"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_title_layout" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:errorEnabled="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/input_taking_bg"
+        app:layout_constraintTop_toBottomOf="@id/label_email_or_username">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_2sdp"
+            android:paddingStart="@dimen/_6sdp"
+            android:textCursorDrawable="@null"
+            android:inputType="textEmailAddress"
+            android:background="@null"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/label_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="@string/password"
+        android:textColor="@color/ash"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/email_text_input_layout"
+        app:layout_constraintStart_toStartOf="@id/email_text_input_layout"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/input_taking_bg"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleDrawable="@drawable/password_visibility_selector"
+        app:passwordToggleTint="@color/red"
+        app:layout_constraintTop_toBottomOf="@id/label_password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_2sdp"
+            android:paddingStart="@dimen/_6sdp"
+            android:textCursorDrawable="@null"
+            android:inputType="textPassword"
+            android:background="@null"/>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rec_round_button_on_pressed"
+        android:clickable="true"
+        android:elevation="@dimen/_30sdp"
+        android:focusable="true"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/password_text_input_layout"
+        app:layout_constraintStart_toStartOf="@id/password_text_input_layout"
+        app:layout_constraintEnd_toEndOf="@id/password_text_input_layout"
+        android:layout_marginTop="@dimen/_16sdp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgetPassword"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="@dimen/_4sdp"
+        android:background="@drawable/white_bg_text_view_press"
+        android:clickable="true"
+        android:focusable="true"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"
+        app:layout_constraintStart_toStartOf="@id/btn_login"
+        app:layout_constraintEnd_toEndOf="@id/btn_login"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:id="@+id/tv_forget_password"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_forget_password"
+        app:layout_constraintStart_toStartOf="@id/tv_forget_password"
+        app:layout_constraintEnd_toEndOf="@id/tv_forget_password"
+        android:padding="@dimen/_4sdp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dontHaveAcc"
+            android:textSize="@dimen/_14sdp"/>
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/signUp"
+            android:layout_toEndOf="@id/text1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold"
+            android:background="@drawable/white_bg_text_view_press"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginStart="@dimen/_2sdp"/>
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -44,7 +44,7 @@ public class SplashScreenActivity extends AppCompatActivity {
                 if(slideViewPager.getCurrentItem()+1 < dots.length){
                     slideViewPager.setCurrentItem(currentPage + 1);
                 }else {
-                    startActivity(new Intent(SplashScreenActivity.this, WelcomeActivity.class));
+                    startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
                 }
             }
         });
