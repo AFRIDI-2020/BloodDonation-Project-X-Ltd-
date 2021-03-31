@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_40sdp"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingEnd="@dimen/_40sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    tools:context=".SignUp3Activity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/blood_drop_icon"
+        app:layout_constraintEnd_toEndOf="@id/app_title_layout"
+        app:layout_constraintStart_toStartOf="@id/app_title_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/app_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon">
+
+        <TextView
+            android:id="@+id/blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toRightOf="@id/blood"
+            android:text="@string/donation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/page_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/what_is_blood_group"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/app_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/blood_group_1"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/text_view_round_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/page_caption">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A+"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerInParent="true"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blood_group_2"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/text_view_round_shape"
+        app:layout_constraintTop_toTopOf="@id/blood_group_1"
+        app:layout_constraintStart_toEndOf="@id/blood_group_1"
+        app:layout_constraintEnd_toStartOf="@id/blood_group_3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A-"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blood_group_3"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/text_view_round_shape"
+        app:layout_constraintTop_toTopOf="@id/blood_group_2"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B+"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/blood_group_4"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/text_view_round_shape"
+        app:layout_constraintStart_toStartOf="@id/blood_group_1"
+        app:layout_constraintTop_toBottomOf="@id/blood_group_1"
+        android:layout_marginTop="@dimen/_16sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B-"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blood_group_5"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/text_view_round_shape"
+        app:layout_constraintTop_toTopOf="@id/blood_group_4"
+        app:layout_constraintStart_toEndOf="@id/blood_group_4"
+        app:layout_constraintEnd_toStartOf="@id/blood_group_6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O+"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blood_group_6"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/text_view_round_shape"
+        app:layout_constraintTop_toTopOf="@id/blood_group_4"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O-"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/blood_group_7"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/text_view_round_shape"
+        app:layout_constraintTop_toBottomOf="@id/blood_group_4"
+        app:layout_constraintStart_toStartOf="@id/blood_group_4"
+        android:layout_marginTop="@dimen/_16sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB+"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/blood_group_8"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/text_view_round_shape"
+        app:layout_constraintTop_toTopOf="@id/blood_group_7"
+        app:layout_constraintStart_toStartOf="@id/blood_group_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AB-"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_16sdp"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message_provide_identity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/your_blood_group_need_to_be"
+        android:textSize="@dimen/_14sdp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/blood_group_7"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/rec_round_button_on_pressed"
+        android:clickable="true"
+        android:elevation="@dimen/_30sdp"
+        android:focusable="true"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/message_provide_identity"
+        app:layout_constraintStart_toStartOf="@id/message_provide_identity"
+        app:layout_constraintTop_toBottomOf="@id/message_provide_identity" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

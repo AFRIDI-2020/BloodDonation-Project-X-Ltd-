@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BloodDonation">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".SignUp3Activity"></activity>
+        <activity android:name=".SignUp2Activity" />
+        <activity android:name=".SignUp1Activity" />
+        <activity android:name=".LoginActivity" />
         <activity android:name=".SplashScreenActivity" />
         <activity android:name=".WelcomeActivity">
             <intent-filter>

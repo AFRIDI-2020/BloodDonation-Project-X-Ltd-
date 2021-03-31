@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_40sdp"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingEnd="@dimen/_40sdp"
+    android:paddingBottom="@dimen/_10sdp"
+    tools:context=".SignUp2Activity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:src="@drawable/blood_drop_icon"
+        app:layout_constraintEnd_toEndOf="@id/app_title_layout"
+        app:layout_constraintStart_toStartOf="@id/app_title_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/app_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon">
+
+        <TextView
+            android:id="@+id/blood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toRightOf="@id/blood"
+            android:text="@string/donation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/page_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/contact_information"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30sdp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/app_title_layout" />
+
+
+    <TextView
+        android:id="@+id/label_phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/phone_no"
+        android:textColor="@color/ash"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/page_caption" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_no_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/input_taking_bg"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/label_phone_no">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="phone"
+            android:padding="@dimen/_2sdp"
+            android:paddingStart="@dimen/_6sdp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/label_alt_phone_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="@string/alt_phone_no"
+        android:textColor="@color/ash"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="@id/phone_no_text_input_layout"
+        app:layout_constraintTop_toBottomOf="@id/phone_no_text_input_layout" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/alt_phone_no_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/input_taking_bg"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/label_alt_phone_no">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="phone"
+            android:padding="@dimen/_2sdp"
+            android:paddingStart="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/label_social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="@string/social"
+        android:textColor="@color/ash"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="@id/alt_phone_no_text_input_layout"
+        app:layout_constraintTop_toBottomOf="@id/alt_phone_no_text_input_layout" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/social_text_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/input_taking_bg"
+        app:boxStrokeColor="@color/black"
+        app:boxStrokeWidth="@dimen/_2sdp"
+        app:errorEnabled="true"
+        app:hintTextColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/label_social"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:inputType="text"
+            android:singleLine="true"
+            android:padding="@dimen/_2sdp"
+            android:paddingStart="@dimen/_6sdp"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/message_provide_identity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/provide_correct_phone_no"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@id/social_text_input_layout" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/rec_round_button_on_pressed"
+        android:clickable="true"
+        android:elevation="@dimen/_30sdp"
+        android:focusable="true"
+        android:padding="@dimen/_12sdp"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/message_provide_identity"
+        app:layout_constraintStart_toStartOf="@id/message_provide_identity"
+        app:layout_constraintTop_toBottomOf="@id/message_provide_identity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
