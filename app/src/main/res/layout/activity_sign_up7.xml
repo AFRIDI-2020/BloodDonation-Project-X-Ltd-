@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".SignUp7Activity"
     android:paddingStart="@dimen/_40sdp"
     android:paddingTop="@dimen/_20sdp"
     android:paddingEnd="@dimen/_40sdp"
-    android:paddingBottom="@dimen/_10sdp"
-    tools:context=".SignUp2Activity">
+    android:paddingBottom="@dimen/_10sdp">
 
     <ImageView
         android:id="@+id/icon"
@@ -54,142 +54,133 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="@string/contact_information"
+        android:text="@string/how_old_are_you"
         android:textColor="@color/black"
         android:textSize="@dimen/_30sdp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/app_title_layout" />
 
-
     <TextView
-        android:id="@+id/label_phone_no"
+        android:id="@+id/label_i_am"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="@string/phone_no"
+        android:text="I am"
         android:textColor="@color/ash"
         android:textSize="@dimen/_14sdp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/page_caption" />
+        app:layout_constraintTop_toBottomOf="@id/page_caption"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/phone_no_text_input_layout"
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/number_picker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/input_taking_bg"
-        app:boxStrokeColor="@color/black"
-        app:boxStrokeWidth="@dimen/_2sdp"
-        app:errorEnabled="true"
-        app:hintTextColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/label_phone_no">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@null"
-            android:inputType="phone"
-            android:padding="@dimen/_2sdp"
-            android:paddingStart="@dimen/_6sdp"
-            android:singleLine="true"
-            android:textColor="@color/black"
-            android:textCursorDrawable="@null"
-            android:textSize="@dimen/_12sdp" />
-
-
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_centerInParent="true"
+        app:np_width="@dimen/_130sdp"
+        app:np_height="@dimen/_40sdp"
+        app:np_max="59"
+        app:np_min="0"
+        app:np_selectedTextColor="@color/black"
+        app:np_selectedTextSize="@dimen/_24sdp"
+        app:np_textColor="@color/ash2"
+        app:np_textSize="@dimen/_13sdp"
+        app:np_wheelItemCount="10"
+        app:np_orientation="horizontal"
+        app:np_value="3"
+        android:layout_marginTop="@dimen/_6sdp"
+        app:layout_constraintTop_toBottomOf="@id/label_i_am"/>
 
 
     <TextView
-        android:id="@+id/label_alt_phone_no"
+        android:id="@+id/label_years_old"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_6sdp"
-        android:text="@string/alt_phone_no"
+        android:text="Years Old"
         android:textColor="@color/ash"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@id/phone_no_text_input_layout"
-        app:layout_constraintTop_toBottomOf="@id/phone_no_text_input_layout" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number_picker"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/alt_phone_no_text_input_layout"
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/number_picker2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:np_width="@dimen/_130sdp"
+        app:np_height="@dimen/_40sdp"
+        app:np_max="31"
+        app:np_min="1"
+        app:np_selectedTextColor="@color/black"
+        app:np_selectedTextSize="@dimen/_24sdp"
+        app:np_textColor="@color/ash2"
+        app:np_textSize="@dimen/_13sdp"
+        app:np_wheelItemCount="10"
+        app:np_orientation="horizontal"
+        app:np_value="15"
         android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/input_taking_bg"
-        app:boxStrokeColor="@color/black"
-        app:boxStrokeWidth="@dimen/_2sdp"
-        app:errorEnabled="true"
-        app:hintTextColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/label_alt_phone_no">
+        app:layout_constraintTop_toBottomOf="@id/label_years_old"/>
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@null"
-            android:inputType="phone"
-            android:padding="@dimen/_2sdp"
-            android:paddingStart="@dimen/_6sdp"
-            android:textColor="@color/black"
-            android:textCursorDrawable="@null"
-            android:textSize="@dimen/_12sdp" />
-
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/label_social"
+        android:id="@+id/label_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_6sdp"
-        android:text="@string/social"
+        android:text="Date"
         android:textColor="@color/ash"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintStart_toStartOf="@id/alt_phone_no_text_input_layout"
-        app:layout_constraintTop_toBottomOf="@id/alt_phone_no_text_input_layout" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/number_picker2"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/social_text_input_layout"
+    <com.shawnlin.numberpicker.NumberPicker
+        android:id="@+id/month_picker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:np_width="@dimen/_130sdp"
+        app:np_height="@dimen/_40sdp"
+        app:np_max="31"
+        app:np_min="1"
+        app:np_selectedTextColor="@color/black"
+        app:np_selectedTextSize="@dimen/_17sdp"
+        app:np_textColor="@color/ash2"
+        app:np_textSize="@dimen/_13sdp"
+        app:np_wheelItemCount="5"
+        app:np_orientation="horizontal"
         android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/input_taking_bg"
-        app:boxStrokeColor="@color/black"
-        app:boxStrokeWidth="@dimen/_2sdp"
-        app:errorEnabled="true"
-        app:hintTextColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/label_social"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@null"
-            android:inputType="text"
-            android:singleLine="true"
-            android:padding="@dimen/_2sdp"
-            android:paddingStart="@dimen/_6sdp"
-            android:textColor="@color/black"
-            android:textCursorDrawable="@null"
-            android:textSize="@dimen/_12sdp" />
+        app:layout_constraintTop_toBottomOf="@id/label_date"/>
 
 
-    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/label_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="Month"
+        android:textColor="@color/ash"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/month_picker"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/message_provide_identity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:text="@string/provide_correct_phone_no"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="@string/correct_birthdate_give_you"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintTop_toBottomOf="@id/social_text_input_layout" />
-
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/label_month"
+        />
 
     <Button
-        android:id="@+id/btn_next2"
+        android:id="@+id/btn_next7"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_12sdp"
@@ -198,8 +189,8 @@
         android:elevation="@dimen/_30sdp"
         android:focusable="true"
         android:padding="@dimen/_12sdp"
-        android:onClick="goToSignUp3Activity"
         android:text="@string/next"
+        android:onClick="goToSignUp8Activity"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/_14sdp"
@@ -208,5 +199,7 @@
         app:layout_constraintEnd_toEndOf="@id/message_provide_identity"
         app:layout_constraintStart_toStartOf="@id/message_provide_identity"
         app:layout_constraintTop_toBottomOf="@id/message_provide_identity" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

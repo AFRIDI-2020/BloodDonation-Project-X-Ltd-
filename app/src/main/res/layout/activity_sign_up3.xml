@@ -226,7 +226,7 @@
         />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_next3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_12sdp"
@@ -236,6 +236,7 @@
         android:focusable="true"
         android:padding="@dimen/_12sdp"
         android:text="@string/next"
+        android:onClick="goToSignUp4Activity"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/_14sdp"

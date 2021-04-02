@@ -39,4 +39,10 @@ dependencies {
 
     //sdp library
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    //number picker
+    implementation 'com.shawnlin:number-picker:2.4.6'
+
+    //circular image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
 }

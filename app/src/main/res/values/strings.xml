@@ -40,4 +40,29 @@
     <string name="your_blood_group_need_to_be">Your blood group need to be accurate. If you don\'t know about it please contact nearest clinic.</string>
 
 
+    <!--sign up 4 -->
+    <string name="how_much_you_weight">How Much Do You Weight</string>
+    <string name="weight_advise">Note: you can not donate blood if you\'re under weight. Minimum weight for donation required 50 KG</string>
+
+    <!--sign up 5 -->
+    <string name="what_is_gender">What Is Your Gender</string>
+    <string name="defining_your_gender">Defining your gender will late us know bring new features for mothers health care.</string>
+
+    <!--sign up 6 -->
+    <string name="where_do_you_live">Where Do You Live</string>
+    <string name="street_address">Street Address</string>
+    <string name="city">City</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="provide_correct_adress">Please provide correct address. This information will keep safe.</string>
+
+
+    <!--sign up 7 -->
+    <string name="how_old_are_you">How Old Are You?</string>
+    <string name="correct_birthdate_give_you">Correct birthdate give you best experience with the community. Don\'t hide it.</string>
+
+
+    <!--sign up 8 -->
+    <string name="you_are_almost_done">You\'re almost done</string>
+    <string name="do_not_use_model">Please do not use a model or doll avatar. Please keep faith on yourself you\'re beautiful too.</string>
+
 </resources>

@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".SignUp6Activity"
     android:paddingStart="@dimen/_40sdp"
     android:paddingTop="@dimen/_20sdp"
     android:paddingEnd="@dimen/_40sdp"
-    android:paddingBottom="@dimen/_10sdp"
-    tools:context=".SignUp1Activity">
+    android:paddingBottom="@dimen/_10sdp">
+
 
     <ImageView
         android:id="@+id/icon"
@@ -54,7 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_20sdp"
-        android:text="@string/letUsKnowAboutYou"
+        android:text="@string/where_do_you_live"
         android:textColor="@color/black"
         android:textSize="@dimen/_30sdp"
         android:textStyle="bold"
@@ -66,7 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
-        android:text="@string/username"
+        android:text="@string/street_address"
         android:textColor="@color/ash"
         android:textSize="@dimen/_14sdp"
         app:layout_constraintStart_toStartOf="parent"
@@ -106,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_6sdp"
-        android:text="@string/email"
+        android:text="@string/city"
         android:textColor="@color/ash"
         android:textSize="@dimen/_14sdp"
         app:layout_constraintTop_toBottomOf="@id/username_text_input_layout"
@@ -145,7 +146,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_6sdp"
-        android:text="@string/password"
+        android:text="@string/postal_code"
         android:textColor="@color/ash"
         android:textSize="@dimen/_14sdp"
         app:layout_constraintTop_toBottomOf="@id/email_text_input_layout"
@@ -161,9 +162,7 @@
         app:boxStrokeWidth="@dimen/_2sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:background="@drawable/input_taking_bg"
-        app:passwordToggleEnabled="true"
-        app:passwordToggleDrawable="@drawable/password_visibility_selector"
-        app:passwordToggleTint="@color/red"
+        app:errorEnabled="true"
         app:layout_constraintTop_toBottomOf="@id/label_password">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -185,14 +184,14 @@
         android:id="@+id/message_provide_identity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/provieYourIdentity"
+        android:text="@string/provide_correct_adress"
         app:layout_constraintTop_toBottomOf="@id/password_text_input_layout"
         android:textSize="@dimen/_14sdp"
         android:layout_marginTop="@dimen/_10sdp"/>
 
 
     <Button
-        android:id="@+id/btn_next"
+        android:id="@+id/btn_next6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rec_round_button_on_pressed"
@@ -200,8 +199,8 @@
         android:elevation="@dimen/_30sdp"
         android:focusable="true"
         android:padding="@dimen/_12sdp"
-        android:onClick="goToSignUp2Activity"
         android:text="@string/next"
+        android:onClick="goToSignUp7Activity"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="@dimen/_14sdp"
