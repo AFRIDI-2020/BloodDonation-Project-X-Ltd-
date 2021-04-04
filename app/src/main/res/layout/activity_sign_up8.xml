@@ -99,6 +99,7 @@
         android:textColor="@color/white"
         android:textSize="@dimen/_14sdp"
         android:textStyle="bold"
+        android:onClick="goToHomePage"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/message_provide_identity"
         app:layout_constraintStart_toStartOf="@id/message_provide_identity"

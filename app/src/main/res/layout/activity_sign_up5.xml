@@ -79,6 +79,7 @@
             app:cardCornerRadius="@dimen/_10sdp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/maleLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/weight_cardview_bg"
@@ -123,6 +124,7 @@
             app:cardCornerRadius="@dimen/_10sdp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/femaleLayout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@drawable/weight_cardview_bg"

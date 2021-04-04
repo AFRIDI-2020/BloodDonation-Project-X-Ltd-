@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@id/page_caption" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/username_text_input_layout"
+        android:id="@+id/street_text_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:hintTextColor="@color/black"
@@ -110,12 +110,12 @@
         android:text="@string/city"
         android:textColor="@color/ash"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintTop_toBottomOf="@id/username_text_input_layout"
-        app:layout_constraintStart_toStartOf="@id/username_text_input_layout"/>
+        app:layout_constraintTop_toBottomOf="@id/street_text_input_layout"
+        app:layout_constraintStart_toStartOf="@id/street_text_input_layout"/>
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/email_text_input_layout"
+        android:id="@+id/city_text_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:hintTextColor="@color/black"
@@ -149,12 +149,12 @@
         android:text="@string/postal_code"
         android:textColor="@color/ash"
         android:textSize="@dimen/_14sdp"
-        app:layout_constraintTop_toBottomOf="@id/email_text_input_layout"
-        app:layout_constraintStart_toStartOf="@id/email_text_input_layout"/>
+        app:layout_constraintTop_toBottomOf="@id/city_text_input_layout"
+        app:layout_constraintStart_toStartOf="@id/city_text_input_layout"/>
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/password_text_input_layout"
+        android:id="@+id/postal_code_text_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:hintTextColor="@color/black"
@@ -173,7 +173,7 @@
             android:padding="@dimen/_2sdp"
             android:paddingStart="@dimen/_6sdp"
             android:textCursorDrawable="@null"
-            android:inputType="textPassword"
+            android:inputType="text"
             android:background="@null"/>
 
 
@@ -185,7 +185,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/provide_correct_adress"
-        app:layout_constraintTop_toBottomOf="@id/password_text_input_layout"
+        app:layout_constraintTop_toBottomOf="@id/postal_code_text_input_layout"
         android:textSize="@dimen/_14sdp"
         android:layout_marginTop="@dimen/_10sdp"/>
 
