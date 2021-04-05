@@ -12,5 +12,6 @@
     <color name="ash">#465349</color>
     <color name="ash2">#e7e2e8</color>
     <color name="TextInputLayoutErrrorMessageColor">#FC0404</color>
+    <color name="ash3">#222823</color>
     <color name="low_white">#F1EFF7</color>
 </resources>

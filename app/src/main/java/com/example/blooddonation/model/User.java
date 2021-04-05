@@ -1,4 +1,4 @@
-package com.example.blooddonation;
+package com.example.blooddonation.model;
 
 public class User {
 
